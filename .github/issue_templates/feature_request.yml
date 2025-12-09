@@ -1,0 +1,112 @@
+name: Feature Request
+description: Suggest an idea for this project
+title: "[Feature]: "
+labels: ["enhancement"]
+assignees: []
+
+body:
+  - type: input
+    id: feature-title
+    attributes:
+      label: Feature Title
+      description: A clear and concise title for the feature
+      placeholder: Brief description of the feature...
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem-statement
+    attributes:
+      label: Problem Statement
+      description: What problem does this feature solve? Is your feature request related to a problem?
+      placeholder: Describe the problem this feature would solve...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the solution you'd like.
+      placeholder: How should this work?
+
+  - type: textarea
+    id: alternatives-considered
+    attributes:
+      label: Alternatives Considered
+      description: Describe any alternative solutions or features you've considered.
+      placeholder: What alternatives did you consider...
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case
+      describe the use case where this feature would be helpful.
+      placeholder: When and how would you use this feature?
+
+  - type: textarea
+    id: technical-requirements
+    attributes:
+      label: Technical Requirements
+      description: Technical specifications for this feature
+      value: |
+        **Functionality:** What specific functionality should this feature provide?
+        **Performance:** Are there any performance considerations?
+        **Dependencies:** Does this feature require additional dependencies?
+        **API Changes:** Will this require changes to existing APIs?
+      placeholder: Technical details...
+
+  - type: textarea
+    id: implementation-details
+    attributes:
+      label: Implementation Details
+      description: How do you envision implementing this feature?
+      placeholder: Implementation approach or technical details...
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: What criteria must be met for this feature to be considered complete?
+      placeholder: |
+        - [ ] Criterion 1
+        - [ ] Criterion 2
+        - [ ] Criterion 3
+
+  - type: textarea
+    id: mockups-examples
+    attributes:
+      label: Mockups/Examples
+      description: If applicable, add sketches, screenshots, or examples of how the feature should work.
+      placeholder: Describe or link to mockups, examples...
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature?
+      options:
+        - "Low - Nice to have, can be implemented later"
+        - "Medium - Should be included in next release"
+        - "High - Important for user experience"
+        - "Critical - Essential for product viability"
+
+  - type: checkboxes
+    id: research-context
+    attributes:
+      label: Research Context
+      description: Is this feature related to:
+      options:
+        - label: Research methodology
+        - label: Algorithm improvement
+        - label: User interface
+        - label: Performance optimization
+        - label: Documentation
+        - label: Testing infrastructure
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context, screenshots, or examples about the feature request here.
+      placeholder: Any other relevant information...

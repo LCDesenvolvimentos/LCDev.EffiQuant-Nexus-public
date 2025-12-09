@@ -1,0 +1,110 @@
+name: User Story
+description: Define a user story following agile principles
+title: "[User Story]: "
+labels: ["user-story"]
+assignees: []
+
+body:
+  - type: input
+    id: user-story
+    attributes:
+      label: User Story
+      description: As a [type of user], I want [some goal/feature] so that [some reason/benefit]
+      placeholder: As a [user type], I want [goal] so that [benefit]
+    validations:
+      required: true
+
+  - type: textarea
+    id: story-details
+    attributes:
+      label: Story Details
+      description: Additional details about this user story
+      value: |
+        **Epic:** [Epic name if part of larger feature]
+        **Priority:** [High/Medium/Low]
+        **Story Points:** [1-3-5-8-13]
+        **Sprint:** [Target sprint]
+      placeholder: Story details...
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Define the conditions that must be met for this story to be considered done
+      value: |
+        - [ ] **Given** [initial context]
+        - [ ] **When** [event/action occurs]
+        - [ ] **Then** [expected outcome]
+        
+        ### Detailed Criteria
+        - [ ] Criterion 1
+        - [ ] Criterion 2
+        - [ ] Criterion 3
+      placeholder: Define acceptance criteria...
+
+  - type: textarea
+    id: user-journey
+    attributes:
+      label: User Journey
+      description: Describe the step-by-step user journey
+      placeholder: |
+        1. User navigates to [location]
+        2. User performs [action]
+        3. System responds with [expected behavior]
+        4. User achieves [goal]
+
+  - type: textarea
+    id: business-value
+    attributes:
+      label: Business Value
+      description: Why is this story important? What business problem does it solve?
+      placeholder: Describe the business value and impact...
+
+  - type: checkboxes
+    id: research-impact
+    attributes:
+      label: Research Impact
+      description: How does this story relate to our research methodology:
+      options:
+        - label: Theoretical formulation
+        - label: Controlled experimentation
+        - label: Academic reproducibility
+        - label: Practical application
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: What does this story depend on or block?
+      value: |
+        **Blocked by:** [Issues/requirements that must be completed first]
+        **Blocks:** [Issues/features that depend on this story]
+      placeholder: Dependencies...
+
+  - type: textarea
+    id: technical-notes
+    attributes:
+      label: Technical Notes
+      description: Any technical considerations or constraints for implementation
+      placeholder: Technical constraints, dependencies, considerations...
+
+  - type: textarea
+    id: definition-of-done
+    attributes:
+      label: Definition of Done
+      description: What must be completed for this story to be considered done?
+      value: |
+        - [ ] Code implemented and tested
+        - [ ] Unit tests written and passing
+        - [ ] Integration tests completed
+        - [ ] Documentation updated
+        - [ ] Code review completed
+        - [ ] Feature tested in staging environment
+      placeholder: Definition of done checklist...
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any additional information, mockups, or references related to this user story
+      placeholder: Any other relevant information...

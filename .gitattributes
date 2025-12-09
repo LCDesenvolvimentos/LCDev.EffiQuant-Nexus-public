@@ -1,0 +1,249 @@
+# LC Desenvolvimentos - Git Attributes Configuration
+# https://git-scm.com/docs/gitattributes
+
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Source code files
+*.py text eol=lf
+*.pyx text eol=lf
+*.pxd text eol=lf
+*.pxi text eol=lf
+*.c text eol=lf
+*.cpp text eol=lf
+*.cc text eol=lf
+*.cxx text eol=lf
+*.h text eol=lf
+*.hpp text eol=lf
+*.hxx text eol=lf
+*.cu text eol=lf
+*.cuh text eol=lf
+*.m text eol=lf
+*.mm text eol=lf
+*.js text eol=lf
+*.jsx text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf
+*.ini text eol=lf
+*.cfg text eol=lf
+*.conf text eol=lf
+
+# Configuration files
+Makefile text eol=lf
+CMakeLists.txt text eol=lf
+setup.py text eol=lf
+requirements*.txt text eol=lf
+Pipfile text eol=lf
+pyproject.toml text eol=lf
+setup.cfg text eol=lf
+
+# Documentation files
+*.md text eol=lf
+*.rst text eol=lf
+*.txt text eol=lf
+LICENSE* text eol=lf
+AUTHORS text eol=lf
+CHANGELOG* text eol=lf
+CONTRIBUTING* text eol=lf
+CODE_OF_CONDUCT* text eol=lf
+
+# Shell scripts
+*.sh text eol=lf
+*.bash text eol=lf
+*.zsh text eol=lf
+*.fish text eol=lf
+
+# Web files (keep line endings as-is for consistency)
+*.html text eol=lf
+*.css text eol=lf
+*.scss text eol=lf
+*.sass text eol=lf
+*.less text eol=lf
+
+# Binary files - do not normalize
+*.exe binary
+*.dll binary
+*.so binary
+*.dylib binary
+*.a binary
+*.lib binary
+*.o binary
+*.obj binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg binary
+*.webp binary
+*.mp4 binary
+*.avi binary
+*.mov binary
+*.mp3 binary
+*.wav binary
+*.flac binary
+*.aac binary
+*.ogg binary
+*.zip binary
+*.tar binary
+*.gz binary
+*.bz2 binary
+*.7z binary
+*.rar binary
+*.pdf binary
+*.doc binary
+*.docx binary
+*.xls binary
+*.xlsx binary
+*.ppt binary
+*.pptx binary
+
+# Machine learning and AI specific files
+*.model binary
+*.h5 binary
+*.hdf5 binary
+*.pb binary
+*.pbtxt binary
+*.onnx binary
+*.pt binary
+*.pth binary
+*.ckpt binary
+*.safetensors binary
+*.bin binary
+*.dat binary
+
+# Dataset files
+*.csv text eol=lf
+*.tsv text eol=lf
+*.jsonl text eol=lf
+*.parquet binary
+*.feather binary
+*.arrow binary
+
+# Notebook files (preserve line endings)
+*.ipynb text eol=lf
+*.nb text eol=lf
+
+# Log files
+*.log text eol=lf
+*.out text eol=lf
+*.err text eol=lf
+
+# Temporary files
+*.tmp text eol=lf
+*.temp text eol=lf
+*.bak text eol=lf
+*.swp text eol=lf
+*.swo text eol=lf
+*~ text eol=lf
+
+# Archive files
+*.tar.bz2 binary
+*.tar.xz binary
+*.tar.Z binary
+*.tar.lz binary
+*.tar.lzma binary
+
+# Language-specific settings
+# Python
+*.py linguist-documentation=false
+*.py linguist-generated=false
+# But keep *.py test files
+test_*.py linguist-documentation=false
+*_test.py linguist-documentation=false
+
+# Jupyter Notebooks
+*.ipynb linguist-generated=false
+
+# Documentation
+*.md linguist-documentation=true
+docs/** linguist-documentation=true
+
+# Research files
+research/** linguist-language=Python
+papers/** linguist-documentation=true
+*.bib linguist-language=TeX
+
+# Configuration files
+.github/** linguist-documentation=true
+*.yml linguist-language=YAML
+*.yaml linguist-language=YAML
+
+# Merge strategies for specific files
+# Always use the version from the branch being merged
+*.sql merge=union
+*.csv merge=union
+*.tsv merge=union
+
+# Text files that should always use union merge strategy
+*.json merge=union
+*.jsonl merge=union
+
+# Code owners and reviewers
+CODEOWNERS linguist-generated=true
+
+# Copyright and license files
+LICENSE* linguist-generated=true
+COPYING* linguist-generated=true
+
+# Changelog and version files
+CHANGELOG* linguist-generated=true
+VERSION linguist-generated=true
+
+# GitHub specific files
+.gitignore linguist-generated=true
+.gitattributes linguist-generated=true
+.github/** linguist-generated=true
+
+# Dockerfile and Docker compose
+Dockerfile* linguist-language=Dockerfile
+docker-compose*.yml linguist-language=YAML
+
+# CI/CD files
+*.workflow linguist-language=YAML
+.github/workflows/* linguist-language=YAML
+
+# Large data files
+data/** linguist-generated=true
+datasets/** linguist-generated=true
+models/** linguist-generated=true
+checkpoints/** linguist-generated=true
+
+# Generated files in general
+__pycache__/** linguist-generated=true
+*.pyc linguist-generated=true
+*.pyo linguist-generated=true
+build/** linguist-generated=true
+dist/** linguist-generated=true
+.venv/** linguist-generated=true
+venv/** linguist-generated=true
+env/** linguist-generated=true
+
+# Specific file attributes
+# Treat certain files as documentation
+README.md linguist-documentation=true
+AUTHORS linguist-documentation=true
+CONTRIBUTING.md linguist-documentation=true
+CHANGELOG.md linguist-documentation=true
+SECURITY.md linguist-documentation=true
+SUPPORT.md linguist-documentation=true
+
+# Research paper files
+*.pdf linguist-generated=false
+*.ps linguist-generated=false
+*.bib linguist-generated=false
+*.bbl linguist-generated=false
+*.blg linguist-generated=false
+
+# Specific project files
+# Language detection
+*.cu linguist-language=CUDA
+*.cuh linguist-language=CUDA
+*.glsl linguist-language=GLSL
+*.vert linguist-language=GLSL
+*.frag linguist-language=GLSL
+*.comp linguist-language=GLSL

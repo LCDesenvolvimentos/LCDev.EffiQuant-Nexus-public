@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://lcdesenvolvimentos.github.io/docs
+    about: Check our documentation for guides and tutorials
+  - name: Research Lines
+    url: https://lcdesenvolvimentos.github.io/pesquisa.html
+    description: Learn about our current research initiatives
+  - name: Support
+    url: https://github.com/LCDesenvolvimentos/LCDev.GitRepoTemplate/issues
+    description: Get help from the community
+  - name: Contact
+    url: mailto:lcdev@lcdesenvolvimentos.com.br
+    description: Contact our research team directly

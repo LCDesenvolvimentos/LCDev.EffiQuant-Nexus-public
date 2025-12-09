@@ -1,0 +1,66 @@
+# LC Desenvolvimentos - Funding Configuration
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-funding-files
+
+# Academic and Research Funding
+github: # Add your GitHub Sponsors username
+patreon: # Add your Patreon username
+open_collective: # Add your Open Collective username
+ko_fi: # Add your Ko-fi username
+tidelift: # Add your Tidelift marketplace username
+community_bridge: # Add your Community Bridge username
+liberapay: # Add your Liberapay username
+issuehunt: # Add your IssueHunt username
+otechie: # Add your Otechie username
+custom: # Add custom funding links
+
+# Institutional and Industrial Partnerships
+# For academic collaborations, industrial partnerships, and research funding
+academic_funding:
+  description: "Support our AI research and academic partnerships"
+  institutions:
+    - name: "CAPES"
+      url: "https://www.capes.gov.br/"
+    - name: "CNPq"
+      url: "https://www.cnpq.br/"
+    - name: "FAPERJ"
+      url: "https://www.faperj.rj.gov.br/"
+    - name: "FINEP"
+      url: "https://www.finep.gov.br/"
+
+industrial_partnerships:
+  description: "Interested in industry partnerships for applied research?"
+  contact: "lcdev@lcdesenvolvimentos.com.br"
+  areas:
+    - "Specialized hardware development for AI"
+    - "Algorithm optimization for specific use cases"
+    - "Research and innovation consulting"
+    - "Collaboration on R&D projects"
+
+# Research Grant Opportunities
+research_grants:
+  description: "Funding opportunities for collaborative research"
+  programs:
+    - name: "Google Research Credits"
+      url: "https://research.google/research-credits/"
+    - name: "Microsoft AI for Good"
+      url: "https://www.microsoft.com/en-us/ai/ai-for-good"
+    - name: "NVIDIA GPU Grant Program"
+      url: "https://developer.nvidia.com/gpu-grants"
+    - name: "Amazon Research Awards"
+      url: "https://aws.amazon.com/research-credits/"
+
+# Hugging Face Support
+huggingface:
+  description: "Support our models and datasets on Hugging Face"
+  profile: "https://huggingface.co/lcdev"
+  datasets: "https://huggingface.co/datasets/lcdev"
+  models: "https://huggingface.co/models?author=lcdev"
+
+# Collaboration and Partnership Contact
+partnerships:
+  academic: "research@lcdesenvolvimentos.com.br"
+  industrial: "partnerships@lcdesenvolvimentos.com.br"
+  general: "lcdev@lcdesenvolvimentos.com.br"
+
+# For specific funding needs and research opportunities
+# Please contact us directly at: lcdev@lcdesenvolvimentos.com.br

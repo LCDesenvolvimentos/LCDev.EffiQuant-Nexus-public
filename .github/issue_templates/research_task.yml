@@ -1,0 +1,279 @@
+name: Research Task
+description: Define an academic research task following our methodology
+title: "[Research]: "
+labels: ["research"]
+assignees: []
+
+body:
+  - type: input
+    id: research-title
+    attributes:
+      label: Research Task Title
+      description: Clear title for the research objective
+      placeholder: Research task title...
+    validations:
+      required: true
+
+  - type: textarea
+    id: research-context
+    attributes:
+      label: Research Context
+      description: Which research line and methodology step?
+      value: |
+        ### Research Line
+        - [ ] EffiQuant Nexus - Quantum Computing Applications
+        - [ ] ParamSpace Bridge - Multi-dimensional Parameter Spaces
+        - [ ] TaskTailor - Adaptive Task Management
+        - [ ] CogniFlow - Cognitive Flow Systems
+        - [ ] NeuroMimic - Neural Network Mimicry
+        - [ ] ArchSynth - Architectural Synthesis
+        
+        ### Research Methodology Step
+        - [ ] 1. Rigorous Theoretical Formulation
+        - [ ] 2. Controlled Experimentation
+        - [ ] 3. Academic Reproducibility
+        - [ ] 4. Practical Application
+      placeholder: Research context...
+
+  - type: textarea
+    id: research-objectives
+    attributes:
+      label: Research Objectives
+      description: What are the research goals?
+      value: |
+        **Primary Objective:** [Main research question or hypothesis]
+        
+        **Secondary Objectives:**
+        - [ ] Objective 1
+        - [ ] Objective 2
+        - [ ] Objective 3
+      placeholder: Research objectives...
+
+  - type: textarea
+    id: theoretical-foundation
+    attributes:
+      label: Theoretical Foundation
+      description: What is the theoretical basis for this research?
+      value: |
+        ### Literature Review
+        **Key Papers:** [List relevant academic papers]
+        **Current State:** [What is known in the field]
+        **Gap Identified:** [What our research addresses]
+        
+        ### Theoretical Framework
+        Describe the theoretical framework or mathematical model being developed.
+        
+        ### Hypothesis
+        State the research hypothesis(es) to be tested.
+      placeholder: Theoretical foundation...
+
+  - type: textarea
+    id: experimental-design
+    attributes:
+      label: Experimental Design
+      description: How will this research be conducted?
+      value: |
+        ### Research Methodology
+        #### Data Collection
+        **Data Sources:** [Where data will come from]
+        **Sample Size:** [Number of samples/participants]
+        **Collection Method:** [How data will be collected]
+        
+        #### Experimental Conditions
+        **Control Group:** [Control conditions]
+        **Treatment Group:** [Treatment conditions]
+        **Variables:** [Independent/dependent variables]
+        
+        #### Measurement Instruments
+        **Metrics:** [How success will be measured]
+        **Tools:** [Software/hardware required]
+        **Validation:** [How measurements will be validated]
+      placeholder: Experimental design...
+
+  - type: textarea
+    id: implementation-details
+    attributes:
+      label: Implementation Details
+      description: Technical implementation requirements
+      value: |
+        #### Technical Requirements
+        **Framework:** [e.g., PyTorch, TensorFlow]
+        **Hardware:** [GPU/CPU requirements]
+        **Software:** [Required software packages]
+        **Environment:** [Development/testing environment]
+        
+        #### Code Structure
+        ```
+        research_project/
+        ├── theory/           # Theoretical formulations
+        ├── experiments/      # Experimental code
+        ├── data/            # Datasets
+        ├── analysis/        # Analysis scripts
+        ├── results/         # Results and outputs
+        └── documentation/   # Research documentation
+        ```
+      placeholder: Implementation details...
+
+  - type: textarea
+    id: reproducibility-standards
+    attributes:
+      label: Reproducibility Standards
+      description: How will research reproducibility be ensured?
+      value: |
+        ### Documentation Requirements
+        - [ ] Complete experimental protocol
+        - [ ] Detailed methodology documentation
+        - [ ] Code with comprehensive comments
+        - [ ] Data preprocessing steps
+        - [ ] Parameter specifications
+        
+        ### Validation Requirements
+        - [ ] Independent verification by research team
+        - [ ] Cross-validation with different datasets
+        - [ ] Statistical significance testing
+        - [ ] Comparison with baseline methods
+        
+        ### Sharing and Publication
+        - [ ] Code repository with proper documentation
+        - [ ] Dataset availability (if applicable)
+        - [ ] Preprint submission plan
+        - [ ] Journal publication strategy
+      placeholder: Reproducibility standards...
+
+  - type: textarea
+    id: expected-outcomes
+    attributes:
+      label: Expected Outcomes
+      description: What are the anticipated research contributions?
+      value: |
+        ### Research Contributions
+        **Theoretical:** [Expected theoretical contributions]
+        **Practical:** [Expected practical applications]
+        **Methodological:** [Expected methodological improvements]
+        
+        ### Deliverables
+        - [ ] Research paper/draft
+        - [ ] Code repository
+        - [ ] Experimental results
+        - [ ] Documentation
+        - [ ] Presentation materials
+      placeholder: Expected outcomes...
+
+  - type: textarea
+    id: timeline
+    attributes:
+      label: Research Timeline
+      description: What is the research schedule?
+      value: |
+        ### Research Phases
+        **Literature Review:** [Duration]
+        **Theoretical Development:** [Duration]
+        **Experimental Design:** [Duration]
+        **Implementation:** [Duration]
+        **Analysis:** [Duration]
+        **Validation:** [Duration]
+        **Documentation:** [Duration]
+        
+        ### Key Milestones
+        - [ ] Milestone 1 - [Date]
+        - [ ] Milestone 2 - [Date]
+        - [ ] Milestone 3 - [Date]
+        - [ ] Research Complete - [Date]
+      placeholder: Research timeline...
+
+  - type: textarea
+    id: resource-requirements
+    attributes:
+      label: Resource Requirements
+      description: What resources are needed for this research?
+      value: |
+        ### Human Resources
+        **Principal Investigator:** [Name]
+        **Research Team:** [Names]
+        **Collaborators:** [External collaborators if any]
+        
+        ### Technical Resources
+        **Computing Resources:** [GPU hours, storage, etc.]
+        **Software Licenses:** [Required software]
+        **Data Access:** [Required datasets]
+        
+        ### Academic Resources
+        **Library Access:** [Required academic databases]
+        **Conference Attendance:** [Conferences for presentation]
+        **Publication Costs:** [Journal fees if applicable]
+      placeholder: Resource requirements...
+
+  - type: textarea
+    id: risk-assessment
+    attributes:
+      label: Risk Assessment
+      description: What are the research risks and mitigation strategies?
+      value: |
+        ### Research Risks
+        - [ ] Risk 1 with mitigation strategy
+        - [ ] Risk 2 with mitigation strategy
+        
+        ### Technical Risks
+        - [ ] Risk 3 with mitigation strategy
+        
+        ### Timeline Risks
+        - [ ] Risk 4 with mitigation strategy
+      placeholder: Risk assessment...
+
+  - type: textarea
+    id: success-criteria
+    attributes:
+      label: Success Criteria
+      description: How will research success be measured?
+      value: |
+        ### Academic Validation
+        - [ ] Peer review acceptance
+        - [ ] Citation by other researchers
+        - [ ] Reproducibility by independent researchers
+        
+        ### Research Impact
+        - [ ] Theoretical advancement
+        - [ ] Practical application
+        - [ ] Methodological contribution
+      placeholder: Success criteria...
+
+  - type: textarea
+    id: ethical-considerations
+    attributes:
+      label: Ethical Considerations
+      description: What ethical considerations apply to this research?
+      value: |
+        ### Research Ethics
+        - [ ] IRB approval (if required)
+        - [ ] Informed consent (if human subjects)
+        - [ ] Data privacy compliance
+        
+        ### Open Science
+        - [ ] Open data sharing plan
+        - [ ] Open code repository
+        - [ ] Transparent methodology
+      placeholder: Ethical considerations...
+
+  - type: textarea
+    id: collaboration-opportunities
+    attributes:
+      label: Collaboration Opportunities
+      description: What collaboration opportunities exist?
+      value: |
+        ### Academic Collaboration
+        - [ ] Potential academic partners
+        - [ ] Existing collaborations
+        - [ ] Future collaboration opportunities
+        
+        ### Industry Applications
+        - [ ] Potential industry applications
+        - [ ] Patent opportunities
+        - [ ] Technology transfer possibilities
+      placeholder: Collaboration opportunities...
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any additional context, constraints, or strategic considerations
+      placeholder: Any other relevant information...

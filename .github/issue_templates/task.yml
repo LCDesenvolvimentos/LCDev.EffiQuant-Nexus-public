@@ -1,0 +1,179 @@
+name: Technical Task
+description: Define a technical task or work item
+title: "[Task]: "
+labels: ["task"]
+assignees: []
+
+body:
+  - type: input
+    id: task-description
+    attributes:
+      label: Task Description
+      description: Clear and concise description of what needs to be done
+      placeholder: Brief description of the task...
+    validations:
+      required: true
+
+  - type: textarea
+    id: objectives
+    attributes:
+      label: Objectives
+      description: What are the goals of this task?
+      value: |
+        **Primary Goal:** [Main objective of this task]
+        **Secondary Goals:** [Additional objectives]
+      placeholder: Task objectives...
+
+  - type: textarea
+    id: functional-requirements
+    attributes:
+      label: Functional Requirements
+      description: What must this task accomplish?
+      value: |
+        - [ ] Requirement 1
+        - [ ] Requirement 2
+        - [ ] Requirement 3
+      placeholder: Functional requirements...
+
+  - type: textarea
+    id: non-functional-requirements
+    attributes:
+      label: Non-Functional Requirements
+      description: Quality and constraint requirements
+      value: |
+        **Performance:** [Performance criteria]
+        **Security:** [Security considerations]
+        **Scalability:** [Scalability requirements]
+        **Maintainability:** [Maintenance considerations]
+      placeholder: Non-functional requirements...
+
+  - type: textarea
+    id: implementation-approach
+    attributes:
+      label: Implementation Approach
+      description: Describe the technical approach and architecture considerations
+      placeholder: Technical approach and architecture...
+
+  - type: textarea
+    id: technology-stack
+    attributes:
+      label: Technology Stack
+      description: Technology requirements for this task
+      value: |
+        **Language:** [e.g., Python 3.9+]
+        **Framework:** [e.g., PyTorch 1.12+]
+        **Dependencies:** [New dependencies required]
+        **Tools:** [Development/testing tools needed]
+      placeholder: Technology stack details...
+
+  - type: textarea
+    id: code-structure
+    attributes:
+      label: Expected Code Structure
+      description: How should the code be organized?
+      value: |
+        ```
+        project/
+        ├── src/
+        │   ├── module1/
+        │   └── module2/
+        ├── tests/
+        └── docs/
+        ```
+      placeholder: Code structure...
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: What does this task depend on?
+      value: |
+        **Prerequisites:** [What must be completed before starting]
+        **Blocked by:** [Issues that must be resolved first]
+        **Blocks:** [What this task enables]
+      placeholder: Dependencies...
+
+  - type: textarea
+    id: definition-of-done
+    attributes:
+      label: Definition of Done
+      description: What must be completed for this task to be considered done?
+      value: |
+        - [ ] Code implemented following style guidelines
+        - [ ] Unit tests written and passing (80%+ coverage)
+        - [ ] Integration tests completed
+        - [ ] Performance benchmarks met
+        - [ ] Security review completed
+        - [ ] Documentation updated
+        - [ ] Code review approved
+        - [ ] Deployed to staging environment
+        - [ ] User acceptance testing completed
+      placeholder: Definition of done criteria...
+
+  - type: textarea
+    id: testing-strategy
+    attributes:
+      label: Testing Strategy
+      description: How will this task be tested?
+      value: |
+        **Unit Tests:**
+        - [ ] Test component A
+        - [ ] Test component B
+        - [ ] Test error handling
+        
+        **Integration Tests:**
+        - [ ] Test integration with existing systems
+        - [ ] Test API endpoints
+        - [ ] Test database operations
+        
+        **Performance Tests:**
+        - [ ] Benchmark performance requirements
+        - [ ] Test under load conditions
+      placeholder: Testing approach...
+
+  - type: checkboxes
+    id: research-context
+    attributes:
+      label: Research Context
+      description: This task supports our research methodology:
+      options:
+        - label: Theoretical formulation
+        - label: Controlled experimentation
+        - label: Academic reproducibility
+        - label: Practical application
+
+  - type: textarea
+    id: estimated-effort
+    attributes:
+      label: Estimated Effort
+      description: Time and complexity estimates
+      value: |
+        **Time:** [e.g., 2-3 days]
+        **Complexity:** [Low/Medium/High]
+        **Risk:** [Low/Medium/High]
+      placeholder: Effort estimates...
+
+  - type: textarea
+    id: resources-needed
+    attributes:
+      label: Resources Needed
+      description: What resources are required for this task?
+      value: |
+        **Documentation:** [Required documentation]
+        **Hardware:** [GPU requirements, etc.]
+        **External Services:** [APIs, databases, etc.]
+      placeholder: Required resources...
+
+  - type: textarea
+    id: success-metrics
+    attributes:
+      label: Success Metrics
+      description: How will we measure the success of this task?
+      placeholder: Success criteria and metrics...
+
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: Additional Notes
+      description: Any additional context, constraints, or considerations
+      placeholder: Any other relevant information...

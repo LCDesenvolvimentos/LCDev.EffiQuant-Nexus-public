@@ -1,0 +1,59 @@
+# LC Desenvolvimentos - Code Ownership
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Global owners - These owners will be the default owners for everything in the repository
+# Unless a later match takes precedence, these owners will be requested for review
+# when someone opens a pull request.
+*       @LCDesenvolvimentos/maintainers
+
+# Research and AI Algorithm Development
+/research/  @LCDesenvolvimentos/research-team @LCDesenvolvimentos/algorithm-team
+*.py       @LCDesenvolvimentos/research-team @LCDesenvolvimentos/algorithm-team
+*.ipynb    @LCDesenvolvimentos/research-team @LCDesenvolvimentos/algorithm-team
+/models/    @LCDesenvolvimentos/algorithm-team
+/algorithms/ @LCDesenvolvimentos/algorithm-team
+
+# Hardware and Performance Optimization
+/hardware/  @LCDesenvolvimentos/hardware-team
+/optimization/ @LCDesenvolvimentos/performance-team
+*.cu        @LCDesenvolvimentos/hardware-team
+*.cuh       @LCDesenvolvimentos/hardware-team
+
+# Documentation and Research Papers
+/docs/      @LCDesenvolvimentos/docs-team
+/papers/    @LCDesenvolvimentos/research-team @LCDesenvolvimentos/docs-team
+*.md        @LCDesenvolvimentos/docs-team
+README.md   @LCDesenvolvimentos/docs-team
+
+# CI/CD and Infrastructure
+/.github/   @LCDesenvolvimentos/devops-team
+*.yml       @LCDesenvolvimentos/devops-team
+*.yaml      @LCDesenvolvimentos/devops-team
+Dockerfile* @LCDesenvolvimentos/devops-team
+requirements*.txt @LCDesenvolvimentos/devops-team
+
+# API and Web Development
+/api/       @LCDesenvolvimentos/web-team
+/web/       @LCDesenvolvimentos/web-team
+*.js        @LCDesenvolvimentos/web-team
+*.html      @LCDesenvolvimentos/web-team
+*.css       @LCDesenvolvimentos/web-team
+
+# Testing and Quality Assurance
+/tests/     @LCDesenvolvimentos/qa-team
+/test_*.py  @LCDesenvolvimentos/qa-team
+*test*.py   @LCDesenvolvimentos/qa-team
+
+# Configuration Files
+*.json      @LCDesenvolvimentos/maintainers
+*.toml      @LCDesenvolvimentos/maintainers
+*.ini       @LCDesenvolvimentos/maintainers
+
+# Security and Compliance
+SECURITY.md @LCDesenvolvimentos/security-team
+CODE_OF_CONDUCT.md @LCDesenvolvimentos/community-team
+CONTRIBUTING.md @LCDesenvolvimentos/community-team
+
+# External Collaborations (Academic and Industrial)
+/collaborations/ @LCDesenvolvimentos/partnerships-team
+/partnerships/  @LCDesenvolvimentos/partnerships-team

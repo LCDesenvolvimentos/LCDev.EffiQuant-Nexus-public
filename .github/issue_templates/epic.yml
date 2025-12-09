@@ -1,0 +1,211 @@
+name: Epic
+description: Define a large feature or strategic initiative
+title: "[Epic]: "
+labels: ["epic"]
+assignees: []
+
+body:
+  - type: input
+    id: epic-title
+    attributes:
+      label: Epic Title
+      description: A clear and concise title for this epic
+      placeholder: Epic title...
+    validations:
+      required: true
+
+  - type: textarea
+    id: epic-overview
+    attributes:
+      label: Epic Overview
+      description: A clear and concise description of the epic and its strategic importance
+      placeholder: Epic description and strategic context...
+
+  - type: textarea
+    id: business-objectives
+    attributes:
+      label: Business Objectives
+      description: What business goals does this epic achieve?
+      value: |
+        **Primary Objective:** [Main business goal]
+        **Secondary Objectives:** [Supporting business goals]
+        **Success Metrics:** [How success will be measured]
+      placeholder: Business objectives...
+
+  - type: textarea
+    id: user-stories-summary
+    attributes:
+      label: User Stories Summary
+      description: List the user stories that are part of this epic
+      value: |
+        ### Core User Stories
+        - [ ] [Story 1]
+        - [ ] [Story 2]
+        - [ ] [Story 3]
+        
+        ### Supporting User Stories
+        - [ ] [Story 4]
+        - [ ] [Story 5]
+        - [ ] [Story 6]
+      placeholder: User stories overview...
+
+  - type: textarea
+    id: technical-scope
+    attributes:
+      label: Technical Scope
+      description: What is included and excluded from this epic?
+      value: |
+        ### In Scope
+        - [ ] Feature A
+        - [ ] Feature B
+        - [ ] Feature C
+        
+        ### Out of Scope
+        - [ ] Feature X (to be addressed in future epic)
+        - [ ] Feature Y (not part of current business goals)
+      placeholder: Technical scope...
+
+  - type: textarea
+    id: implementation-phases
+    attributes:
+      label: Implementation Phases
+      description: How will this epic be delivered?
+      value: |
+        ### Phase 1: Foundation
+        - [ ] Technical infrastructure
+        - [ ] Core functionality
+        - [ ] Basic testing framework
+        
+        ### Phase 2: Enhancement
+        - [ ] Advanced features
+        - [ ] Performance optimization
+        - [ ] Integration improvements
+        
+        ### Phase 3: Refinement
+        - [ ] User experience improvements
+        - [ ] Documentation
+        - [ ] Final testing and validation
+      placeholder: Implementation phases...
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: What external or internal dependencies exist?
+      value: |
+        ### External Dependencies
+        - [ ] Dependency 1
+        - [ ] Dependency 2
+        
+        ### Internal Dependencies
+        - [ ] Dependency 3
+        - [ ] Dependency 4
+      placeholder: Dependencies...
+
+  - type: checkboxes
+    id: research-integration
+    attributes:
+      label: Research Integration
+      description: This epic supports our research methodology:
+      options:
+        - label: Theoretical formulation - [Description]
+        - label: Controlled experimentation - [Description]
+        - label: Academic reproducibility - [Description]
+        - label: Practical application - [Description]
+
+  - type: textarea
+    id: risk-assessment
+    attributes:
+      label: Risk Assessment
+      description: What are the main risks and mitigation strategies?
+      value: |
+        ### High Risk Items
+        - [ ] Risk 1 with mitigation strategy
+        - [ ] Risk 2 with mitigation strategy
+        
+        ### Medium Risk Items
+        - [ ] Risk 3 with mitigation strategy
+      placeholder: Risk assessment...
+
+  - type: textarea
+    id: resource-requirements
+    attributes:
+      label: Resource Requirements
+      description: What team and infrastructure is needed?
+      value: |
+        ### Team Composition
+        **Tech Lead:** [Name]
+        **Developers:** [Names]
+        **Researchers:** [Names]
+        **QA:** [Names]
+        
+        ### Infrastructure
+        **Development Environment:** [Requirements]
+        **Testing Environment:** [Requirements]
+        **Production Environment:** [Requirements]
+      placeholder: Resource requirements...
+
+  - type: textarea
+    id: timeline
+    attributes:
+      label: Timeline
+      description: What is the expected timeline?
+      value: |
+        **Start Date:** [Date]
+        **End Date:** [Date]
+        
+        ### Key Milestones
+        - [ ] Milestone 1 - [Date]
+        - [ ] Milestone 2 - [Date]
+        - [ ] Milestone 3 - [Date]
+        - [ ] Epic Complete - [Date]
+      placeholder: Timeline and milestones...
+
+  - type: textarea
+    id: success-criteria
+    attributes:
+      label: Success Criteria
+      description: What must be achieved for this epic to be considered successful?
+      value: |
+        - [ ] All acceptance criteria met for user stories
+        - [ ] Performance benchmarks achieved
+        - [ ] Security requirements satisfied
+        - [ ] User acceptance testing passed
+        - [ ] Documentation completed
+        - [ ] Academic validation completed
+      placeholder: Success criteria...
+
+  - type: textarea
+    id: measurement
+    attributes:
+      label: Measurement
+      description: How will success be measured?
+      value: |
+        ### Key Performance Indicators
+        **Technical:** [Metrics]
+        **User:** [Metrics]
+        **Business:** [Metrics]
+        
+        ### Academic Impact
+        **Publications:** [Expected publications]
+        **Research Validation:** [Validation requirements]
+        **Reproducibility:** [Reproducibility standards]
+      placeholder: Measurement approach...
+
+  - type: textarea
+    id: communication-plan
+    attributes:
+      label: Communication Plan
+      description: How will stakeholders be kept informed?
+      value: |
+        **Stakeholders:** [List of stakeholders]
+        **Communication Frequency:** [How often updates will be provided]
+        **Reporting Format:** [Reports, demos, etc.]
+      placeholder: Communication plan...
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any additional context, constraints, or strategic considerations
+      placeholder: Any other relevant information...
