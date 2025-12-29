@@ -246,11 +246,11 @@ We welcome contributions from the entire community! See our [Contributing Guide]
 
 ## Statistics
 
-![GitHub stars](https://img.shields.io/github/stars/LCDesenvolvimentos/LCDev.GitRepoTemplate?style=social)
-![GitHub forks](https://img.shields.io/github/forks/LCDesenvolvimentos/LCDev.GitRepoTemplate?style=social)
-![GitHub issues](https://img.shields.io/github/issues/LCDesenvolvimentos/LCDev.GitRepoTemplate)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/LCDesenvolvimentos/LCDev.GitRepoTemplate)
-![GitHub license](https://img.shields.io/github/license/LCDesenvolvimentos/LCDev.GitRepoTemplate)
+![GitHub stars](https://img.shields.io/github/stars/LCDesenvolvimentos/LCDev.EffiQuant-Nexus-public?style=social)
+![GitHub forks](https://img.shields.io/github/forks/LCDesenvolvimentos/LCDev.EffiQuant-Nexus-public?style=social)
+![GitHub issues](https://img.shields.io/github/issues/LCDesenvolvimentos/LCDev.EffiQuant-Nexus-public)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/LCDesenvolvimentos/LCDev.EffiQuant-Nexus-public)
+![GitHub license](https://img.shields.io/github/license/LCDesenvolvimentos/LCDev.EffiQuant-Nexus-public)
 
 ## Acknowledgment
 
@@ -314,8 +314,8 @@ This project is licensed under the Polyform-Strict License - see the [LICENSE](L
 
 Made with heart by the LC Desenvolvimentos Team
 
-[Star this repo](https://github.com/LCDesenvolvimentos/LCDev.GitRepoTemplate) • 
-[Report a bug](https://github.com/LCDesenvolvimentos/LCDev.GitRepoTemplate/issues) • 
-[Request a feature](https://github.com/LCDesenvolvimentos/LCDev.GitRepoTemplate/issues)
+[Star this repo](https://github.com/LCDesenvolvimentos/LCDev.EffiQuant-Nexus-public) • 
+[Report a bug](https://github.com/LCDesenvolvimentos/LCDev.EffiQuant-Nexus-public/issues) • 
+[Request a feature](https://github.com/LCDesenvolvimentos/LCDev.EffiQuant-Nexus-public/issues)
 
 </div>
