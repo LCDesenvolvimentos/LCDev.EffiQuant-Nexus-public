@@ -250,7 +250,6 @@ We welcome contributions from the entire community! See our [Contributing Guide]
 ![GitHub forks](https://img.shields.io/github/forks/LCDesenvolvimentos/LCDev.EffiQuant-Nexus-public?style=social)
 ![GitHub issues](https://img.shields.io/github/issues/LCDesenvolvimentos/LCDev.EffiQuant-Nexus-public)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/LCDesenvolvimentos/LCDev.EffiQuant-Nexus-public)
-![GitHub license](https://img.shields.io/github/license/LCDesenvolvimentos/LCDev.EffiQuant-Nexus-public)
 
 ## Acknowledgment
 
