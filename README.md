@@ -5,9 +5,17 @@
 [![Hugging Face](https://img.shields.io/badge/Hugging_Face-lcdev-yellowgreen.svg)](https://huggingface.co/lcdev)
 [![Research](https://img.shields.io/badge/Research-AI%20%7C%20ML-orange.svg)](#linhas-de-pesquisa)
 
-> Este repositório implementa e documenta a pesquisa **EffiQuant Nexus**.
-> 
-> [EN] This repository implements and documents the EffiQuant Nexus research.
+<details open>
+  <summary>EN</summary>
+
+  This repository implements and documents the EffiQuant Nexus research.
+</details>
+
+<details>
+  <summary>PT</summary>
+
+  Este repositório implementa e documenta a pesquisa **EffiQuant Nexus**.
+</details>
 
 ## Table of Contents
 
@@ -27,63 +35,71 @@
 
 ## Overview
 
-A pesquisa **EffiQuant Nexus** é um framework de compressão adaptativa que integra quantização, poda estrutural e destilação de conhecimento em um ciclo fechado de feedback. O objetivo é reduzir custo de inferência (latência, memória e tamanho do modelo) sem violar restrições operacionais explícitas (por exemplo, acurácia mínima).
+<details open>
+  <summary>EN</summary>
 
-[EN] The EffiQuant Nexus research is an adaptive compression framework that integrates quantization, structural pruning, and knowledge distillation within a closed-loop feedback cycle. The goal is to reduce inference cost (latency, memory, and model size) without violating explicit operational constraints (e.g., minimum accuracy).
+  The EffiQuant Nexus research is an adaptive compression framework that integrates quantization, structural pruning, and knowledge distillation within a closed-loop feedback cycle. The goal is to reduce inference cost (latency, memory, and model size) without violating explicit operational constraints (e.g., minimum accuracy).
 
 **Framework for Adaptive Model Compression with Performance Guarantee**
 - Combination of dynamic quantization, structured pruning, and knowledge distillation
 - Real-time feedback to maintain operational accuracy
 - Drastic reduction in computational footprint
+</details>
+
+<details>
+  <summary>PT</summary>
+
+  A pesquisa **EffiQuant Nexus** é um framework de compressão adaptativa que integra quantização, poda estrutural e destilação de conhecimento em um ciclo fechado de feedback. O objetivo é reduzir custo de inferência (latência, memória e tamanho do modelo) sem violar restrições operacionais explícitas (por exemplo, acurácia mínima).
+</details>
 
 ## Motivation and Rationale for the Research
 
-Em sistemas com LLMs e outros modelos grandes, técnicas de compressão são eficazes, mas:
-- Os trade-offs variam por modelo, por hardware e por runtime (CPU/GPU, kernels, compiladores).
-- Configurações fixas podem degradar qualidade de forma imprevisível quando há mudança de distribuição, prompts ou carga.
-- A combinação de técnicas (quantização + poda + destilação) gera efeitos não lineares e difíceis de calibrar manualmente.
+<details open>
+  <summary>EN</summary>
 
-A hipótese central desta pesquisa é que **compressão deve ser tratada como um processo controlado e auditável**, com decisões iterativas, medições em tempo (quase) real e capacidade de rollback quando uma restrição é violada.
-
-[EN]
-In systems using LLMs and other large models, compression techniques are effective, but:
+  In systems using LLMs and other large models, compression techniques are effective, but:
 - Trade-offs vary by model, hardware, and runtime (CPU/GPU, kernels, compilers).
 - Fixed configurations can degrade quality unpredictably when there are shifts in distribution, prompts, or workload.
 - Combining techniques (quantization + pruning + distillation) produces non-linear effects that are difficult to calibrate manually.
 
 The central hypothesis of this research is that **compression should be treated as a controlled and auditable process**, with iterative decision-making, (near) real-time measurements, and the ability to roll back when a constraint is violated.
+</details>
+
+<details>
+  <summary>PT</summary>
+
+  Em sistemas com LLMs e outros modelos grandes, técnicas de compressão são eficazes, mas:
+- Os trade-offs variam por modelo, por hardware e por runtime (CPU/GPU, kernels, compiladores).
+- Configurações fixas podem degradar qualidade de forma imprevisível quando há mudança de distribuição, prompts ou carga.
+- A combinação de técnicas (quantização + poda + destilação) gera efeitos não lineares e difíceis de calibrar manualmente.
+
+A hipótese central desta pesquisa é que **compressão deve ser tratada como um processo controlado e auditável**, com decisões iterativas, medições em tempo (quase) real e capacidade de rollback quando uma restrição é violada.
+</details>
 
 ## Contribution of EffiQuant Nexus
-- **Controle por restrições (garantia operacional)**: cada intervenção é aceita apenas se as métricas observadas permanecerem dentro de limites definidos.
-- **Rollback por snapshot**: o estado do modelo pode ser restaurado quando uma ação candidata degrada o desempenho além do permitido.
-- **Ações plugáveis**: quantização, poda e destilação são implementadas como ações independentes, permitindo extensões para diferentes stacks de LLM (PyTorch, TensorRT-LLM, vLLM, etc.).
-- **Logging estruturado**: o processo gera rastros auditáveis do “antes/depois”, decisão (aceito/rejeitado) e motivo.
 
-[EN]
+<details open>
+  <summary>EN</summary>
+
 - **Constraint-based control (operational guarantees)**: each intervention is accepted only if the observed metrics remain within predefined limits.
 - **Snapshot-based rollback**: the model state can be restored when a candidate action degrades performance beyond acceptable thresholds.
 - **Pluggable actions**: quantization, pruning, and distillation are implemented as independent actions, enabling extensions to different LLM stacks (PyTorch, TensorRT-LLM, vLLM, etc.).
 - **Structured logging**: the process generates auditable traces of the “before/after” state, the decision (accepted/rejected), and the rationale.
+</details>
+
+<details>
+  <summary>PT</summary>
+
+- **Controle por restrições (garantia operacional)**: cada intervenção é aceita apenas se as métricas observadas permanecerem dentro de limites definidos.
+- **Rollback por snapshot**: o estado do modelo pode ser restaurado quando uma ação candidata degrada o desempenho além do permitido.
+- **Ações plugáveis**: quantização, poda e destilação são implementadas como ações independentes, permitindo extensões para diferentes stacks de LLM (PyTorch, TensorRT-LLM, vLLM, etc.).
+- **Logging estruturado**: o processo gera rastros auditáveis do “antes/depois”, decisão (aceito/rejeitado) e motivo.
+</details>
 
 ## Current State (What Is Already Implemented)
-- Núcleo do controlador e pipeline:
-  - `effiquant_nexus/controller.py`
-  - `effiquant_nexus/pipeline.py`
-  - `effiquant_nexus/types.py`
-- Ações de compressão (integrações PyTorch, quando aplicável):
-  - `effiquant_nexus/compression/quantization.py`
-  - `effiquant_nexus/compression/pruning.py`
-  - `effiquant_nexus/compression/distillation.py`
-- Experimento toy (demonstra o mecanismo de feedback + rollback e gera artefatos):
-  - `scripts/run_toy_pipeline.py`
-  - saída em `outputs/toy_result.json`
-- Experimento real com LLMs:
-  - `scripts/run_llm_experiment.py` 
-- Texto acadêmico:
-  - versão completa em `research/paper.tex` (PDF: `research/paper.pdf`)
-  - versão curta em `research/paper_short.tex` (PDF: `research/paper_short.pdf`)
+<details open>
+  <summary>EN</summary>
 
-[EN]
 - Core controller and pipeline:
   - `effiquant_nexus/controller.py`
   - `effiquant_nexus/pipeline.py`
@@ -100,8 +116,80 @@ The central hypothesis of this research is that **compression should be treated 
 - Academic text:
   - full version in `research/paper.tex` (PDF: `research/paper.pdf`)
   - short version in `research/paper_short.tex` (PDF: `research/paper_short.pdf`)
+</details>
+
+<details>
+  <summary>PT</summary>
+
+- Núcleo do controlador e pipeline:
+  - `effiquant_nexus/controller.py`
+  - `effiquant_nexus/pipeline.py`
+  - `effiquant_nexus/types.py`
+- Ações de compressão (integrações PyTorch, quando aplicável):
+  - `effiquant_nexus/compression/quantization.py`
+  - `effiquant_nexus/compression/pruning.py`
+  - `effiquant_nexus/compression/distillation.py`
+- Experimento toy (demonstra o mecanismo de feedback + rollback e gera artefatos):
+  - `scripts/run_toy_pipeline.py`
+  - saída em `outputs/toy_result.json`
+- Experimento real com LLMs:
+  - `scripts/run_llm_experiment.py` 
+- Texto acadêmico:
+  - versão completa em `research/paper.tex` (PDF: `research/paper.pdf`)
+  - versão curta em `research/paper_short.tex` (PDF: `research/paper_short.pdf`)
+</details>
 
 ## How to Run (Reproducibility)
+
+<details open>
+  <summary>EN</summary>
+
+### Prerequisites
+
+- **Git** installed
+- **GitHub account**
+- **Code editor** (VS Code recommended)
+- **Basic knowledge** of Git and GitHub
+
+### Requirements
+- Python 3.10+
+
+### Install development dependencies
+```bash
+python -m pip install -r requirements-dev.txt
+```
+
+### Install dependencies for LLM experiments (optional)
+The LLM prototype uses transformers and torch. For 8-bit/4-bit quantization (bitsandbytes) and some GPU loading paths, also install accelerate:
+```bash
+python -m pip install -r requirements-llm.txt
+```
+
+### Run quality checks
+```bash
+python -m ruff check .
+python -m mypy .
+python -m pytest -q
+```
+
+### Run the toy experiment
+```bash
+python -m scripts.run_toy_pipeline
+```
+The file outputs/toy_result.json records the baseline, final model, and each step (accepted/rejected) with details and rationale.
+
+### Run LLM experiments (runtime-default, grid, sequential, adaptive)
+The main runner is scripts/run_llm_experiment.py. It generates a JSON in outputs/ with baseline/final/steps.
+- Runbook for RTX 3060: research/rtx3060_runbook.txt
+- Quick example (runtime baseline, no compression):
+```bash
+python -m scripts.run_llm_experiment --model-id sshleifer/tiny-gpt2 --mode runtime-default --out outputs/llm_runtime_default.json
+```
+
+</details>
+
+<details>
+  <summary>PT</summary>
 
 ### Prerequisites
 
@@ -124,12 +212,6 @@ O protótipo de LLM usa `transformers` e `torch`. Para quantização 8-bit/4-bit
 python -m pip install -r requirements-llm.txt
 ```
 
-[EN]
-The LLM prototype uses transformers and torch. For 8-bit/4-bit quantization (bitsandbytes) and some GPU loading paths, also install accelerate:
-```bash
-python -m pip install -r requirements-llm.txt
-```
-
 ### Run quality checks
 ```bash
 python -m ruff check .
@@ -143,12 +225,6 @@ python -m scripts.run_toy_pipeline
 ```
 O arquivo `outputs/toy_result.json` registra baseline, modelo final e cada passo (aceito/rejeitado) com detalhes e motivo.
 
-[EN]
-```bash
-python -m scripts.run_toy_pipeline
-```
-The file outputs/toy_result.json records the baseline, final model, and each step (accepted/rejected) with details and rationale.
-
 ### Run LLM experiments (runtime-default, grid, sequential, adaptive)
 O runner principal é `scripts/run_llm_experiment.py`. Ele gera um JSON em `outputs/` com baseline/final/steps.
 - Runbook para RTX 3060: `research/rtx3060_runbook.txt`
@@ -156,14 +232,7 @@ O runner principal é `scripts/run_llm_experiment.py`. Ele gera um JSON em `outp
 ```bash
 python -m scripts.run_llm_experiment --model-id sshleifer/tiny-gpt2 --mode runtime-default --out outputs/llm_runtime_default.json
 ```
-
-[EN]
-The main runner is scripts/run_llm_experiment.py. It generates a JSON in outputs/ with baseline/final/steps.
-- Runbook for RTX 3060: research/rtx3060_runbook.txt
-- Quick example (runtime baseline, no compression):
-```bash
-python -m scripts.run_llm_experiment --model-id sshleifer/tiny-gpt2 --mode runtime-default --out outputs/llm_runtime_default.json
-```
+</details>
 
 ## Methodology
 
